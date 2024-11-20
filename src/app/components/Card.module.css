@@ -1,0 +1,152 @@
+.gridItem {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  height: auto;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardTopLink {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.cardContent {
+  padding: 20px;
+}
+
+.cardCategories {
+  margin-bottom: 15px;
+}
+
+.cardLinks li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cardLinks a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.cardLinks a:hover {
+  text-decoration: underline;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardTitle a {
+  color: #333;
+  text-decoration: none;
+}
+
+.cardTitle a:hover {
+  text-decoration: underline;
+}
+
+.cardExcerpt {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.permalink {
+  margin-bottom: 10px;
+}
+
+.permalink a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.permalink a:hover {
+  background-color: #2980b9;
+}
+
+.cardMeta {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.cardMetaDelimiter {
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .cardContent {
+    padding: 15px;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .cardExcerpt {
+    font-size: 0.95rem;
+  }
+
+  .permalink a {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .cardTitle {
+    font-size: 1.125rem;
+  }
+
+  .cardExcerpt {
+    font-size: 0.875rem;
+  }
+
+  .cardMeta {
+    font-size: 0.75rem;
+  }
+
+  .permalink a {
+    font-size: 0.75rem;
+  }
+}

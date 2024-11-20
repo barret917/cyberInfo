@@ -1,0 +1,11 @@
+.link {
+    color: white; /* Цвет обычных ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .active {
+    color: #f0a500; /* Цвет активной ссылки */
+    background-color: rgba(117, 116, 116, 0.5);
+  }
+  
